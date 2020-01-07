@@ -1,4 +1,6 @@
-java.time.LocalDateTime;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.lang.Thread;
 
 public class Main {
 
@@ -14,8 +16,7 @@ public class Main {
     System.out.println("I own " + turtleCount + " " + pluralize("turtle", turtleCount) + ".");
 
     flipNHeads(10);
-
-    System.out.println(LocalDateTime);
+    clock();
   }
 
   public static String pluralize(String animal, int count) {
@@ -54,17 +55,25 @@ public class Main {
         }
       }
     }
-    System.out.println("It " + "took " + flipCount + "flips " + "to " + "flip " + headCount + "heads" + "in a row.");
+    System.out.println("It " + "took " + flipCount + " flips " + "to " + "flip " + headCount + " heads " + "in a row.");
   }
 
-
-  public static void LocalDateTime(int n) {
-
-    LocalDateTime now = LocalDateTime.now();
-    int hour = now.getHour();
-    int minute = now.getMinute();
-    int second = now.getSecond();
+  public static void timer(int second) {
+    try {
+      Thread.sleep(second);
+    } catch (InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
   }
 
-  
+  public static void clock() {
+    boolean isClockRunning = true;
+    while (isClockRunning) {
+      LocalDateTime now = LocalDateTime.now();
+      String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+      System.out.println(time);
+      timer(1000);
+    }
+  }
+
 }
