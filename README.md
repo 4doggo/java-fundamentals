@@ -6,7 +6,10 @@ Contributer: Shingo Nakajima
 ## Java Basics
 
 ### Lab 1 (4hours)
-Pluralize
-FlipNHeads (Coin flip)
-Timer (clock in the terminal)
+- Pluralize
+- FlipNHeads (Coin flip)
+  - used math.random then while loop 
+- Timer (clock in the terminal) 
+  - imported packages
 
+  - Just had a difficult time with understanding the syntax and getting used to it. 
