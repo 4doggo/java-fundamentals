@@ -17,6 +17,7 @@ public class Main {
 
     flipNHeads(10);
     clock();
+    // clock1();
   }
 
   public static String pluralize(String animal, int count) {
@@ -75,5 +76,27 @@ public class Main {
       timer(1000);
     }
   }
+
+  // public static void clock1() {
+  // LocalDateTime now = LocalDateTime.now();
+  // int hour = now.getHour();
+  // int minute = now.getMinute();
+  // int second = now.getSecond();
+
+  // while (true) {
+  // now = LocalDateTime.now();
+  // if (now.getSecond() != lastSecond) {
+  // hour = now.getHour();
+  // minutes = now.getMinute();
+  // lastSecond = now.getSecond();
+
+  // System.out.println(hour);
+  // System.out.println(minute);
+  // System.out.println(second);
+
+  // }
+  // }
+
+  // }
 
 }

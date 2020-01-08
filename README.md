@@ -13,4 +13,11 @@ Contributer: Shingo Nakajima
 - Timer (clock in the terminal) 
   - imported packages
 
-   
+### Lab 2 (4.5hours)
+   *using yesterday's lab and code challenge 2 I was able to figure out the logic*
+   - Rolling dice 
+     - while loop 
+   - containsDuplicates
+     - nested forloop 
+   - calculateAverage
+     - for loop then simple average calculation *used cast to divide an int to double to divide against the double
