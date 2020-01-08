@@ -64,9 +64,15 @@ public class BasicLibrary {
         return average;
     }
 
-
-
-
+//public static void arrayOfArray(int[] array){
+//for (int i = 0; i<array.length; i++){
+//    double averageArray = calculateAverage(array);
+//    for
+//}
+//
+//}
+//
+//
 
 
 
