@@ -4,11 +4,37 @@
 package basiclibrary;
 
 import org.junit.Test;
+
+import java.util.Arrays;
+
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    @Test
+    public void testContainsDuplicates() {
+
+        int[] testArray = new int[]{1, 2, 3, 4, 10, 10, 11, 11};
+        assertTrue(BasicLibrary.containsDuplicates(testArray));
     }
+
+    @Test
+    public void testContainsDuplicatesNoDuplicates() {
+
+        int[] testArray = new int[]{1, 2, 3, 4, 10, 11};
+        assertFalse(BasicLibrary.containsDuplicates(testArray));
+    }
+
+    @Test
+    public void testCalculateAverage(){
+
+        int[] testArray = new int[]{3,6,9,12};
+        assertEquals(7.5, BasicLibrary.calculateAverage(testArray), 0.01);
+
+    }
+
+
 }
