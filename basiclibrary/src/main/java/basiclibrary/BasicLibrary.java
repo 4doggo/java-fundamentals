@@ -14,6 +14,7 @@ public class BasicLibrary {
         containsDuplicates(testArray);
         System.out.println(containsDuplicates(testArray));
 
+
 //        Test for average of array
         int[] testArray2 = new int[]{1,2,3,4,5,100};
         calculateAverage(testArray2);
