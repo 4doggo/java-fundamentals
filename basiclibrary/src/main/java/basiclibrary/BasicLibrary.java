@@ -1,5 +1,7 @@
 package basiclibrary;
 import java.lang.Math;
+import java.lang.reflect.Array;
+import java.util.HashSet;
 
 public class BasicLibrary {
 
@@ -65,15 +67,37 @@ public class BasicLibrary {
         return average;
     }
 
-//public static void arrayOfArray(int[] array){
-//for (int i = 0; i<array.length; i++){
-//    double averageArray = calculateAverage(array);
-//    for
-//}
-//
-//}
-//
-//
+    public static String getMinAndMax(int[][] array){
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+
+        HashSet<Integer> uniqueTemp = new HashSet<>();
+
+        for(int i =0; i < array.length; i++) {
+            for(int j =0; j < array[i].length; j++){
+
+                uniqueTemp.add(array[i][j]);
+
+                if (array[i][j] < min) {
+                    min = array[i][j];
+                }
+                else if (array[i][j] > max){
+                    max = array[i][j];
+                }
+            }
+        }
+
+        String resultHigh = "High: " + max + "/n  ";
+
+
+      for(int temperature = min; temperature <= max; temperature++ ){
+          if (!uniqueTemp.contains(temperature)) {
+
+          }
+          }
+      }
+
+    }
 
 
 
