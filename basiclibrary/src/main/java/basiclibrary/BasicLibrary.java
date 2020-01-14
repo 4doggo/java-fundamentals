@@ -87,8 +87,7 @@ public class BasicLibrary {
             }
         }
 
-        String resultHigh = "High: " + max + "/n  ";
-
+        String resultHigh = "High: " + max + "\n Low:  " + min;
 
       for(int temperature = min; temperature <= max; temperature++ ){
           if (!uniqueTemp.contains(temperature)) {
@@ -96,9 +95,5 @@ public class BasicLibrary {
           }
           }
       }
-
-    }
-
-
 
 }

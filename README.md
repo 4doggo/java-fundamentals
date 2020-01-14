@@ -21,3 +21,12 @@ Contributer: Shingo Nakajima
      - nested forloop 
    - calculateAverage
      - for loop then simple average calculation *used cast to divide an int to double to divide against the double
+
+  ### Lab 6 (4.5hours)
+   *used interface to connect the linked list and class*
+   - Restaurant Class
+     - creates restaurants 
+   - Review Class 
+     - creates reviews for each restaurant 
+   - addReview 
+     - creates a new review 
