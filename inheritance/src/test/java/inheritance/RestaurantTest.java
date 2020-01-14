@@ -28,6 +28,18 @@ public class RestaurantTest {
 
     }
 
+//    failed test was testing for connection of LL and interface
+//    @Test
+//    public void testAddingReview(){
+//        burgerHouse.
+//
+//        assertEquals("a review",
+//                "The restaurant Burger House has 5 stars, in the range of $$! Read the reviews: [this is such a bad restaurant its crazy]",
+//                burgerHouse.addReview(Review));
+//
+//    }
+
+
     @Test
     public void testString() {
 

@@ -12,7 +12,8 @@ public class ReviewTest {
     @Before
     public void setUp() {
 
-        badReview = new Review("this is such a bad restaurant its crazy", "shingo", 5);
+//        passing in review now as the 4th parameter b/c intellij suggested it
+        badReview = new Review("this is such a bad restaurant its crazy", "shingo", 5, review -> {} );
     }
 
     @Test

@@ -5,13 +5,15 @@ public class Review {
     String body;
     String author;
     int rating;
+    Reviewable business;
 
 //    review constructor
-    public Review (String body, String author, int rating){
+    public Review (String body, String author, int rating, Reviewable business){
 
         this.body = body;
         this.author = author;
         this.rating = rating;
+        this.business = business;
     }
 
     public String toString(){
