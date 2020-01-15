@@ -29,7 +29,20 @@ public class Restaurant implements Reviewable{
 
     }
 
-//    Do star rating for restaurant from LL an average & make sure it updates 
+    
+
+
+//    Do star rating for restaurant from LL an average & make sure it updates
+
+//    public double stars(){
+//        if(!this.isStarsAccurate){
+//            int total = 0;
+//            for (Review r : this.reviews){
+//                total += r.stars;
+//            }
+//            this.stars =
+//        }
+//    }
 
 
     public String toString(){
