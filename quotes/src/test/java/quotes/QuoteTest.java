@@ -48,7 +48,7 @@ public class QuoteTest {
             e.printStackTrace();
         }
 
-        
+
 
     }
 

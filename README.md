@@ -30,3 +30,8 @@ Contributer: Shingo Nakajima
      - creates reviews for each restaurant 
    - addReview 
      - creates a new review 
+    
+  ### Lab 9 (4 hours)
+   *Grabbing API from the Internet with Java*
+   - HttpURLConnection class (built in)
+     - sets up grabs API, and prints quote from Ron Swanson 
