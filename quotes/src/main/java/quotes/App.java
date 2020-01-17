@@ -36,18 +36,20 @@ public class App {
         } catch (IOException e) {
             System.out.println("The Internet no work");
             e.printStackTrace();
+
+            //        Using JSON quotes / works for no Internet
+            Gson gson = new Gson();
+
+            Quote[] parseSourceQuotes = gson.fromJson(new FileReader("resources/recentquotes.json"), Quote[].class);
+
+
+            int index = randomizer(parseSourceQuotes.length);
+            Quote randquote = parseSourceQuotes[index];
+            System.out.println(randquote);
         }
 
 
-//        Using JSON quotes / works for no Internet
-        Gson gson = new Gson();
 
-        Quote[] parseSourceQuotes = gson.fromJson(new FileReader("resources/recentquotes.json"), Quote[].class);
-
-
-        int index = randomizer(parseSourceQuotes.length);
-        Quote randquote = parseSourceQuotes[index];
-        System.out.println(randquote);
 
     }
 
