@@ -8,3 +8,5 @@
 
 ## Run instructions
 * ./gradlew test
+
+## App will spit out Ron Swanson quote 

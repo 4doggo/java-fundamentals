@@ -14,7 +14,7 @@ import java.net.URL;
 
 public class App {
     public static void main(String[] args) throws FileNotFoundException {
-        
+
         URL url = null;
         try{
             url = new URL("http://ron-swanson-quotes.herokuapp.com/v2/quotes");
