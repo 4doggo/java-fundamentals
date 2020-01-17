@@ -20,7 +20,7 @@ public class Restaurant implements Reviewable{
         this.restaurantReviews = new LinkedList<>();
     }
 
-//    a way of using interface because interface only takes 1 args 
+//    a way of using interface because interface only takes 1 args
     public void createReview(String body, String author, int rating, Reviewable business) {
         Review newReview = new Review(body, author, rating, business);
 

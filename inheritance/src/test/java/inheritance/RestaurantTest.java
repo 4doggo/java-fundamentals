@@ -39,6 +39,14 @@ public class RestaurantTest {
 //
 //    }
 
+//    testing to see if review was addeed
+//    @Test
+//    public void testAddReview(){
+//
+//        assertEquals("This place is crazy",burgerHouse.createReview("This place is crazy","shingo",5,review ->));
+//
+//    }
+
 
     @Test
     public void testString() {
